@@ -18,6 +18,8 @@ mfcmd.py -e <MediaFireEMail> -p <MediaFirePassword> [-u <RemoteUploadFolder>] [-
 
 ## More information
 https://www.mediafire.com/developers/core_api/1.5
+
 https://pypi.org/project/mediafire/
+
 https://github.com/MediaFire/mediafire-python-open-sdk
 
