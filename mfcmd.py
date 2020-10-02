@@ -3,7 +3,7 @@
 
 # mfcmd.py
 # MediaFire uploader
-# v0.2
+# v0.3
 
 # EXECUTE
 # mfcmd.py -e <MediaFireEMail> -p <MediaFirePassword> [-u <RemoteUploadFolder>] [-h <FileSHA256Checksum>] -f <Filepath>
@@ -20,7 +20,7 @@ from mediafire.client import (File, Folder, MediaFireClient)
 
 def main(argv):
 
-	vnumber = "0.2"
+	vnumber = "0.3"
 	print('mfcmd.py v' + vnumber, file=sys.stderr)
 
 	account = ''
@@ -100,9 +100,9 @@ def main(argv):
 			password=passphrase,
 			app_id='42511')
 		print('MediaFire API: connected', file=sys.stderr)
+		api.session = session
 	except:
 		print('Error:login')
-	api.session = session
 
 	try:
 		userinfo = api.user_get_info()
